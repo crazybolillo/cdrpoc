@@ -6,7 +6,5 @@ import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.response.*
 
 fun Application.configureSerialization() {
-    install(ContentNegotiation) {
-        json()
-    }
+    install(ContentNegotiation) { json() }
 }

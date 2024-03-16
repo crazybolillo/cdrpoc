@@ -9,6 +9,7 @@ plugins {
     kotlin("jvm") version "1.9.23"
     id("io.ktor.plugin") version "2.3.9"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.9.23"
+    id("com.ncorti.ktfmt.gradle") version "0.17.0"
 }
 
 group = "github.crazybolillo"
@@ -40,4 +41,8 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+}
+
+ktfmt {
+    kotlinLangStyle()
 }

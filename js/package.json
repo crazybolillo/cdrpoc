@@ -10,7 +10,8 @@
     "build": "refine build",
     "start": "refine start",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "format": "prettier --write .",
+    "fmt": "prettier --write .",
+    "check": "npm run lint & prettier --check .",
     "refine": "refine"
   },
   "dependencies": {

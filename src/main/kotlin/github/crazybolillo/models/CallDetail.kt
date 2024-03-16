@@ -34,7 +34,8 @@ class CallDetail(id: EntityID<Int>) : IntEntity(id) {
     val duration by CallDetailTable.duration
     val billed by CallDetailTable.billed
 
-    fun toRecord() = CallDetailRecord(id.value, from, to, startedAt, answeredAt, endedAt, duration, billed)
+    fun toRecord() =
+        CallDetailRecord(id.value, from, to, startedAt, answeredAt, endedAt, duration, billed)
 }
 
 @Serializable
